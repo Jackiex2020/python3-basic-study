@@ -1,2 +1,2 @@
 # python3-basic-study
-python3教学代码范例
+python3 study basic
