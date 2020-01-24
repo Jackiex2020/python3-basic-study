@@ -1,2 +1,2 @@
-# python3-basic-study
-python3 study basic
+Python 3 教程
+============
