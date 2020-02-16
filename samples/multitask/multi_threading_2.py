@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 ''' 观察多线程运行和结束'''
 
 import threading
