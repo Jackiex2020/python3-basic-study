@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-'''基本的函数定义:无参数,有参数(基本数据类型),序列数据类型'''
+'''基本的函数定义:无参数,有参数(基本数据类型),序列数据类型等'''
 
 def myfunc():
     pass
 
-# def myfunc(a,b):
+def myfunc1():
+ print("hello world!")
+
+myfunc1()
+
+# def myfunc2(a,b):
 #     return a+b
 
-# print(myfunc(1,2))
+# print(myfunc2(1,2))
 
 # 字符串数据类型
 # def printme(str):
