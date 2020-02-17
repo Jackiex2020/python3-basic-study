@@ -3,8 +3,8 @@
 
 '''基本的函数定义:无参数,有参数(基本数据类型),序列数据类型'''
 
-# def myfunc():
-#     pass
+def myfunc():
+    pass
 
 # def myfunc(a,b):
 #     return a+b
@@ -43,14 +43,14 @@
 
 #定义计算斐波那契数列的第n个数的函数
 '''--------递推方法-----------------'''
-def Fibonacci(n):
-    a, b = 0, 1
-    for i in range(n + 1):
-        a, b = b, a + b    # 注意这个表达式的含义
-    return a
+# def Fibonacci(n):
+#     a, b = 0, 1
+#     for i in range(n + 1):
+#         a, b = b, a + b    # 注意这个表达式的含义
+#     return a
 
-for i in range(10):
-    print(Fibonacci(i), end=' ')
+# for i in range(10):
+#     print(Fibonacci(i), end=' ')
 
 '''--------递归函数-----------------'''
 
@@ -65,13 +65,13 @@ for i in range(10):
 
 '''--------生成器-----------------'''
 
-def fib_loop_while(max):
-    a, b = 0, 1
-    while max > 0:
-        a, b = b, a + b
-        max -= 1
-        yield a
+# def fib_loop_while(max):
+#     a, b = 0, 1
+#     while max > 0:
+#         a, b = b, a + b
+#         max -= 1
+#         yield a
 
 
-for i in fib_loop_while(10):
-    print(i)
+# for i in fib_loop_while(10):
+#     print(i)
