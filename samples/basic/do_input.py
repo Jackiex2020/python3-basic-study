@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# name = input()
-# print('Hello,', name)
+name = input("请输入：")
+print('Hello,', name)
 
 
 # a,b = (input("请输入两个单词：").split())
@@ -13,9 +13,9 @@
 # print("输入的2个数字分别是:%d和%d" %(m,n))
 # print(c)
 
-m = int(input("请输入您购买苹果的重量:"))
-n = int(input("请输入苹果每斤的价格:")
-x=m*n
-print("您需要支付:" x)
+# m = int(input("请输入您购买苹果的重量:"))
+# n = int(input("请输入苹果每斤的价格:")
+
+# print("您需要支付:" m*n)
 
 
