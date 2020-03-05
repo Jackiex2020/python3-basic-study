@@ -8,6 +8,14 @@
 
 '''code description：Python中的string数据类型演示'''
 # here put the import lib
+
+# stra = 'hello'
+# print (id(stra))
+
+# stra += 'world'
+# print (id(stra))
+
+
 word = '字符串'
 sentence = "这是一个句子。"
 paragraph = """这是一个段落，
