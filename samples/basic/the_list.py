@@ -9,7 +9,7 @@
 # print('classmates[2] =', classmates[2])
 # print('classmates[-1] =', classmates[-1])
 
-list1=[1,2,'1','xyz','a','b','cde']
+# list1=[1,2,'1','xyz','a','b','cde']
 # print(list1[0])
 # print(type(list1[0]))
 # print(list1[2])
@@ -23,3 +23,5 @@ empty_list1 = []
 empty_list2=list()
 print(empty_list1)
 print(empty_list2)
+
+empty_list1.

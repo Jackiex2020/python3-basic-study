@@ -6,7 +6,8 @@
 @Version :   1.0
 '''
 
-'''code description：Python的数字数据类型：
+'''
+code description：Python的数字数据类型：
 python中数字有四种类型：整数、布尔型、浮点数和复数。
 int (整数), 如 1, 只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。
 bool (布尔), 如 True。
