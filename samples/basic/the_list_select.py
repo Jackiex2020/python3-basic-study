@@ -9,12 +9,14 @@ import timeit
 
 #循环方式
 
-# data=[1,-3,23,-23,-34,56,34,46]
-# res=[]
-# for x in  data:
-#     if x>=0:
-#         res.append(x)
-# print(res)
+data=[1,-3,23,-23,-34,56,34,46]
+res=[]
+for x in  data:
+    if x>=0:
+        res.append(x)
+print(res)
+
+#列表解析式初始化 ,匿名函数进行筛选
 data1=[randint(-10,10) for _ in range(10)]
 print(data1)
 print(list(filter(lambda x:x>=0,data1)))

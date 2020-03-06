@@ -10,9 +10,9 @@
 # here put the import lib
 
 def myfun():
-    print('this my function!')
+    print('this is my function!')
 
-# myfun()
+myfun()
 
 
 if __name__ == "__main__":

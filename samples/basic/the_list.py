@@ -24,4 +24,3 @@ empty_list2=list()
 print(empty_list1)
 print(empty_list2)
 
-empty_list1.
