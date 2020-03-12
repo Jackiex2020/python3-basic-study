@@ -5,8 +5,10 @@
 '''
 
 PI = 3.14 
-def main():
+def fuc():
     print("PI:", PI)
+
+#fuc()
  
-#if __name__=='__main__':
-main()
+if __name__=='__main__':
+ fuc()
