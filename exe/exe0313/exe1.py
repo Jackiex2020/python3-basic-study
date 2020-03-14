@@ -11,17 +11,23 @@
 
 
 
-list=list(range(0,51))
-print(list)
 
-oddNumbers=[x for x in list if x%2!=0]
-print("列表中的奇数有:" ,oddNumbers)
 
-evenNumbers=[x for x in list if x%2==0]
-print("列表中的偶数有:",evenNumbers)
 
-prime=[x for x in list[2:51] if isPrime(x)==1]
-print("列表中的素数有:",prime)
+
+
+
+
+# list=list(range(0,51))
+# print(list)
+
+# oddNumbers=[x for x in list if x%2!=0]
+# print("列表中的奇数有:" ,oddNumbers)
+
+# evenNumbers=[x for x in list if x%2==0]
+# print("列表中的偶数有:",evenNumbers)
+
+
 
 
 def isPrime(n):
@@ -30,3 +36,6 @@ def isPrime(n):
             return 0
     else:
         return 1
+
+prime=[x for x in list[2:51] if isPrime(x)==1]
+print("列表中的素数有:",prime)

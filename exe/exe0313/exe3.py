@@ -10,12 +10,12 @@
 '''
 l1 = [11, 22, 33]
 l2 = [22, 33, 44]
-for i1 in l1:
-    for i2 in l2:
-        if i1 == i2:
-            print(i1)
+# for i1 in l1:
+#     for i2 in l2:
+#         if i1 == i2:
+#             print(i1)
 
-# set1=set(l1)
-# set2=set(l2)
+set1=set(l1)
+set2=set(l2)
 
-# print(set1&set2)
+print(set1&set2)

@@ -8,16 +8,16 @@
 '''
 
 '''
- 50个同学的成绩;计算平均分,统计低于平均分的人数
+ 40个同学的成绩;计算平均分,统计低于平均分的人数
 '''
 
 import random
-# li = [random.randint(50,100) for i in range(40)]    
+li = [random.randint(50,100) for i in range(40)]    
 ##上面这一行是列表生成式，等同于下面三行代码
-li = []  
-for i in range(40):
-    li.append(random.randint(50,100))
-print('学生成绩如下:',li)
+# li = []  
+# for i in range(40):
+#     li.append(random.randint(50,100))
+# print('学生成绩如下:',li)
 
 avgScore = sum(li) / len(li)
 print('平均分:',avgScore)

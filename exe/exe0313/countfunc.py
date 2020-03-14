@@ -15,7 +15,7 @@ def lei(l):
     kong = 0
     other = 0
     for i in l :
-        if i.isdigit():
+        if i.isdigit():         #  有内置的判断函数
             num +=1
         elif i.isalpha():
             isah +=1
@@ -23,6 +23,6 @@ def lei(l):
              kong +=1
         else:
              other +=1
-    return num,isah,kong,other
+    return num,isah,kong,other   # 能够返回多个值
 
 print(lei(s))

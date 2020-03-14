@@ -16,4 +16,4 @@ if result:
     s = "是"
 else:
     s = "不是"
-print("{0}年{1}闰年".format(year, s))
+print("{0}年{1}闰年".format(year, s))  #  format函数的格式控制使用
