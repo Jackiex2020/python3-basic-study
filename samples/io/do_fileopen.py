@@ -18,20 +18,20 @@ print("当前工作路径：",os.getcwd())
 
 # 打开一个文件
 #f = open("foo.txt", "w")
+
 # 如果每次运行，都将内容添加到末尾：
 #f = open("foo.txt", "a")
 
 # 如果想打开指定地址的文件
 # 默认在当前工作路径打开文件
 # . 代表当前工作的路径，.. 代表当前路径的上一级路径
-#f = open("../foo.txt", "a")
+#f = open("../foo123.txt", "a")
 
 #打开和py文件同一级目录下的文件;open("foo.txt", "a")需要在py文件所在的目录下运行程序即可;
 
 # 打开任意指定位置的文件
 
-f = open(r'E:\flask\foo.txt', 'w', encoding='gbk')   #  r：代表处理不转义现象;正则表达式一种
-
+f = open(r'E:\flask\foo222.txt', 'w', encoding='gbk')   #  r：代表处理不转义现象;正则表达式一种
 
 f.write( "Python 是一个非常好的语言。\n是的，的确非常好!!\n" )
 
