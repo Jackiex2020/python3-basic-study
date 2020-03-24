@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+'''
+Python中的collections模块
+'''
 
 from collections import namedtuple
 
