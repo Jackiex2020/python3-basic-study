@@ -37,3 +37,23 @@ print(os.environ)
 # for f in lfilelist:
 #     print(f)
 
+import sys,os
+ 
+#获取脚本文件的当前路径 
+def cur_file_dir():
+ 
+     #获取脚本路径 
+     path = sys.path[0] 
+     #判断为脚本文件还是py2exe编译后的文件，如果是脚本文件，则返回的是脚本的目录，如果是py2exe编译后的文件，则返回的是编译后的文件路径
+ 
+     if os.path.isdir(path): 
+         return path 
+     elif os.path.isfile(path): 
+         return os.path.dirname(path)
+
+# 获取当前工作目录
+import os 
+print os.getcwd()#获得当前工作目录 
+print os.path.abspath('.')#获得当前工作目录 
+print os.path.abspath('..')#获得当前工作目录的父目录 
+print os.path.abspath(os.curdir)#获得当前工作目录
