@@ -6,11 +6,11 @@ import os
 os.system("cls")
 
 # 在服务器的D盘创建一个文件夹
-#os.mkdir('D:\\123hak')
+# os.mkdir('D:\\234hak')
 
 #查看环境变量
-os.environ
-print(os.environ)
+# os.environ
+# print(os.environ)
 
 #如何使用python删除一个文件？
 # import os
@@ -21,8 +21,11 @@ print(os.environ)
 # else:
 #     print('no such file:%s' % file)
 
+
+# list = os.listdir(os.getcwd())
+# print(list)
+
 #使用代码实现查看列举目录下的所有文件。
-# import os
 # def dirpath(lpath, lfilelist):
 #     list = os.listdir(lpath)
 #     for f in list:
@@ -32,28 +35,30 @@ print(os.environ)
 #         else:
 #             lfilelist.append(file)
 #     return lfilelist
-#
+
 # lfilelist = dirpath(os.getcwd(), [])
 # for f in lfilelist:
 #     print(f)
 
-import sys,os
+import sys
  
 #获取脚本文件的当前路径 
-def cur_file_dir():
+# def cur_file_dir():
  
-     #获取脚本路径 
-     path = sys.path[0] 
-     #判断为脚本文件还是py2exe编译后的文件，如果是脚本文件，则返回的是脚本的目录，如果是py2exe编译后的文件，则返回的是编译后的文件路径
+#      #获取脚本路径 
+#      path = sys.path[0] 
+#      #判断为脚本文件还是py2exe编译后的文件，如果是脚本文件，则返回的是脚本的目录，如果是py2exe编译后的文件，则返回的是编译后的文件路径
  
-     if os.path.isdir(path): 
-         return path 
-     elif os.path.isfile(path): 
-         return os.path.dirname(path)
+#      if os.path.isdir(path): 
+#          return path 
+#      elif os.path.isfile(path): 
+#          return os.path.dirname(path)
 
-# 获取当前工作目录
-import os 
-print os.getcwd()#获得当前工作目录 
-print os.path.abspath('.')#获得当前工作目录 
-print os.path.abspath('..')#获得当前工作目录的父目录 
-print os.path.abspath(os.curdir)#获得当前工作目录
+# cur_file_dir()
+
+# # 获取当前工作目录
+
+print(os.getcwd())#获得当前工作目录 
+print(os.path.abspath('.'))#获得当前工作目录 
+print(os.path.abspath('..'))#获得当前工作目录的父目录 
+print(os.path.abspath(os.curdir))#获得当前工作目录
