@@ -38,36 +38,39 @@
 #     print(img_link,img_name,'\n')
 #     download(img_link,img_name)
 
-
 import re
 from urllib import request
-
 #获取网页的html，与requests包一样的功能
 def getHtml(url):
-    response = request.Request(url, headers = header)
+    response = request.Request(url)
     page = request.urlopen(response)  
     html = page.read() #urllib用read()读取html；requests包用text读取html
     return html
 
 #获取图片对应的src属性代码
-def getImg(html):
+def getImagesUrl(html):
     html=html.decode('utf-8')    
     #通过re-compile-findall二连函数操作来获取图片src属性对应的代码
-    src = r'https://[^\s]*?\.jpg'  
+    src = r'//[^\s]*?\.jpg'     #正则表达式匹配规则
     imgre = re.compile(src)     #re.compile()，可以把正则表达式编译成一个正则表达式对象
-    imglist = re.findall(imgre, html) 
-    #re.findall()，读取html中包含imgre（正则表达式）的数据,imglist是包含了所有src元素的数组
-    
-    #用urlretrieve下载图片。图片命名为0/1/2...之类的名字
-    x = 0
-    for imgurl in imglist:
-        #注意，这里的文件路径，每段路径的首字母一定要大写！！小写会识别出错
-        request.urlretrieve(imgurl, 'E:\\Test_img\\%s.jpg' %x)
-        x += 1
-        print(imgurl,'\n')
+    imglist = re.findall(imgre, html)    # 读取html中包含imgre（正则表达式）的数据,imglist是包含了所有src元素的数组
+    return  imglist
 
-header = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
-html = getHtml("http://slide.news.sina.com.cn/y/slide_1_88490_353183.html/d/1#p=1")
-getImg(html)
-print('OK')
+#用urlretrieve下载图片。图片命名为0/1/2...之类的名字
+def downloadImages(img_url_list):
+    x = 0
+    for url in img_url_list:
+        #注意，这里的文件路径，每段路径的首字母一定要大写！！小写会识别出错
+        imageurl='https:'+url
+        request.urlretrieve(imageurl, 'E:\\Test_img\\%s.jpg' %x)
+        x += 1
+        print('downloading:  https:'+url,'\n')
+
+if __name__=='__main__':
+    html = getHtml("https://www.imooc.com/course/list")
+    images_url=getImagesUrl(html)
+
+    downloadImages(images_url)
+    print('download success!')
+
 
