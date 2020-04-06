@@ -52,14 +52,25 @@
 #缺点: 如果要计算多条线,会创建多个实例对象,浪费资源
 
 # 闭包方式:能计算任意一条直线的y坐标值;也减少了存储资源的浪费
-def line6(a,b):
-    def caculate_y(x):
-        print(a*x+b)
-    return caculate_y
+# def line6(a,b):
+#     def caculate_y(x):
+#         print(a*x+b)
+#     return caculate_y
 
-line6_1=line6(2,5)
-line6_1(0)   
-line6_1(1)
-line6_1(2)
+# line6_1=line6(2,5)
+# line6_1(0)   
+# line6_1(1)
+# line6_1(2)
 
+def count():
+    fs = []
+    for i in range(1, 4):
+        def f():
+             return i*i
+        fs.append(f)
+    return fs
+
+f1, f2, f3 = count()
+
+print(f1())
 
