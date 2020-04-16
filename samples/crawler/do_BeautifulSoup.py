@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-# file:do_BeautifulSoup,py.py
+# file:do_BeautifulSoup.py
 
 # author:jackiex
 # datetime:2020/4/16 14:34
