@@ -14,9 +14,12 @@ class Person(object):
     def __init__(self, name):
         self.name = name
         Person.count = Person.count + 1
-        print(Person.how_many())
+        #print(Person.how_many())
 
 p1 = Person('Bob')
+print(Person.how_many())
+
+p2=Person('tom')
 print(Person.how_many())
 
 '''

@@ -20,3 +20,6 @@ student1.print_info()
 
 student2=Student('003','wagnwu',90)
 student2.print_info()
+
+# class Teacher():
+#   pass

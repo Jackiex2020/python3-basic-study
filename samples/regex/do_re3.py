@@ -11,6 +11,7 @@
 import os
 import re
 from urllib import request
+
 #获取网页的html，与requests包一样的功能
 def getHtml(url):
     response = request.Request(url)
@@ -49,6 +50,8 @@ if __name__=='__main__':
     downloadImages(images_url,path)
     print('download success!')
 
+
+'''获取新浪图片上的照片'''
 
 # import requests  # 用于获取网页
 # from bs4 import BeautifulSoup  # 用于分析网页
