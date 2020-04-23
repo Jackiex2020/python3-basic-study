@@ -12,6 +12,7 @@
 import os
 import re
 from urllib import request
+
 #获取网页的html，与requests包一样的功能
 def getHtml(url):
     response = request.Request(url)
