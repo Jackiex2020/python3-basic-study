@@ -14,7 +14,7 @@ from socket import *
 udp_socket = socket(AF_INET, SOCK_DGRAM)
 
 # 2. 准备接收方的地址
-dest_addr = ('192.168.1.24', 8888)
+dest_addr = ('192.168.31.101', 8888)
 
 # 迭代1 连续发送数据
 while True:

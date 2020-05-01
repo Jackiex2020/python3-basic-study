@@ -5,6 +5,8 @@ from sqlalchemy import Column, String, create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
+
+
 # 创建对象的基类:
 Base = declarative_base()
 
@@ -18,20 +20,30 @@ class User(Base):
     name = Column(String(20))
 
 # 初始化数据库连接:
-engine = create_engine('mysql+mysqlconnector://root:password@localhost:3306/test')
+engine = create_engine('mysql+mysqlconnector://root:123456@localhost:3306/test_db')
+
 # 创建DBSession类型:
 DBSession = sessionmaker(bind=engine)
 
-# 创建session对象:
-session = DBSession()
-# 创建新User对象:
-new_user = User(id='5', name='Bob')
-# 添加到session:
-session.add(new_user)
-# 提交即保存到数据库:
-session.commit()
-# 关闭session:
-session.close()
+'''
+1  连接数据库，并对已有的表插入记录
+'''
+
+# session = DBSession()  # 创建session对象
+# # 创建新User对象:
+# new_user = User(id='5', name='Bob')
+
+# session.add(new_user) # 添加到session
+
+# session.commit()  # 提交即保存到数据库
+
+
+# session.close()  # 关闭session
+
+
+'''
+2   连接数据库，查询记录并输出
+'''
 
 # 创建Session:
 session = DBSession()
