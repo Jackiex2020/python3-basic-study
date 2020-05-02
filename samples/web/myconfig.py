@@ -1,7 +1,7 @@
 DEBUG = True
 
 DIALECT = 'mysql'
-DRIVER = 'pymysql'
+DRIVER = 'mysqlconnector'
 USERNAME = 'root'
 PASSWORD = '123456'
 HOST = '127.0.0.1'
