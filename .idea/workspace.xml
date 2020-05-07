@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e24f2395-7bfb-408c-9342-fa84b75f2c4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/crawler/do_urllib.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/crawler/do_urllib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/functional/return_func2.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/functional/return_func2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/module/def_cost.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/module/hello.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/module/user_area.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +44,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/project/webspide/webpagespider-demo" />
+    <property name="last_opened_file_path" value="D:/flask/api.paper.ncepu.edu.cn" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -194,11 +190,24 @@
       <workItem from="1587113727292" duration="598000" />
       <workItem from="1587526658168" duration="712000" />
       <workItem from="1587532210329" duration="868000" />
+      <workItem from="1587715173078" duration="885000" />
+      <workItem from="1587881694920" duration="1257000" />
+      <workItem from="1587886092048" duration="303000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1587881752148">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1024.1240@0.0.1920.1040" timestamp="1587881752148" />
+    <state x="639" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1587886093358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="639" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1024.1240@0.0.1920.1040" timestamp="1587886093358" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
