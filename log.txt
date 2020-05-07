@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "f:/study/pythonStudy/python3-basic-study/samples/db/do_pymsql.py", line 48, in <module>
+    cursor.execute(sql)
+  File "F:\study\pythonStudy\venv\python3-basic-study\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "F:\study\pythonStudy\venv\python3-basic-study\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "F:\study\pythonStudy\venv\python3-basic-study\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "F:\study\pythonStudy\venv\python3-basic-study\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "F:\study\pythonStudy\venv\python3-basic-study\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "F:\study\pythonStudy\venv\python3-basic-study\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "F:\study\pythonStudy\venv\python3-basic-study\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "F:\study\pythonStudy\venv\python3-basic-study\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'name' at row 1")
