@@ -6,6 +6,9 @@
 # datetime:2020/5/15 16:34
 # software: PyCharm
 '''
-this is function  description 
+   显示留言信息
 '''
-# import module your need
+from flask import Flask,request,render_template,redirect
+
+app = Flask(__name__)
+
