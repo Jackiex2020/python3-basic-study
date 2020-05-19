@@ -21,11 +21,11 @@ def index():
             return redirect("http://www.baidu.com")
         else:
             message = "Failed Login"
-            return render_template('bbs.html',message=message)
+            return render_template('bbs-vue.html',message=message)
     else:
         pass
 
-    return render_template('bbs.html')
+    return render_template('bbs-vue.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
