@@ -27,7 +27,7 @@ class ModelMetaclass(type):
     def __new__(cls, name, bases, attrs):
         if name=='Model':
             return type.__new__(cls, name, bases, attrs)
-        print('Found model: %s' % name)
+        print('Found models: %s' % name)
         mappings = dict()
         for k, v in attrs.items():
             if isinstance(v, Field):
