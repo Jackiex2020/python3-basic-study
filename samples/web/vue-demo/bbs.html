@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+<link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+<body>
+	<div id="app">
+		<div class="biaoti">留言列表</div> 
+			<div class="container" v-for="item in msg">
+
+				<div class="container">
+	
+					<div class="content2">{{item.content}}</div>
+					<div class="time">{{item.createtime}}  {{item.author}}</div>
+				</div>
+				</div>
+
+		 
+			</div>
+
+	</div>
+</body>
+
+<script>
+
+window.onload = function(){
+var vm = new Vue({
+    el:'#app',
+    data:{
+           msg:'',
+            },
+    mounted:function () {
+          this.get();
+            },
+    methods: {
+            get: function(){
+                //发送get请求
+                this.$http.get("http://api.mpb.womenqunaer.cn/news/index",{emulateJSON:true}).then(function(res){
+                    console.log(res.body); 
+                    this.msg=res.body;   
+                },function(){
+                    console.log('请求失败处理');
+                });
+            }
+        }
+});
+}
+</script>
+</html>
