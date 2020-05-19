@@ -3,33 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>python接口测试</title>
-	<script src="http://static.wanlianjin.com/data/m/wlcs/js/nocar/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-	<button onclick="getMessage()">点击获取数据</button>
-	<script>
-		function jsonpCallback(data) {
-		    console.log("jsonpCallback: " + JSON.parse(data).name)
-		}
-		function getMessage(){
-			$.ajax({
-				url:'http://127.0.0.1:5000/get',
-				type:'GET',
-				dataType:'jsonp',
-				crossDomain:true,
-				contentType: "application/jsonp;",
-				// jsonp 字段含义为服务器通过什么字段获取回调函数的名称
-		        jsonp: 'callback',
-		        // 声明本地回调函数的名称，jquery 默认随机生成一个函数名称
-		        jsonpCallback: 'jsonpCallback',
-				success: function(data) {
-		            console.log("ajax success callback: " + JSON.parse(data).name)
-		        },
-		        error: function(jqXHR, textStatus, errorThrown) {
-		            console.log(textStatus + ' ' + errorThrown);
-		        }
-			})
-		}
-	</script>
+	<div id="test"></div>
+
+ <script type="text/JavaScript">
+   $(document).ready(function() {
+            $.ajax({
+                url : "http://127.0.0.1:5000/get",//后台请求的数据，用的是PHP
+                dataType : "json",//数据格式
+                type : "get",//请求方式
+                async : false,//是否异步请求
+                success : function(data)
+                   {   //如果请求成功，返回数据。
+                      var html = "";
+                      for(var i=0;i<data.length;i++){    //遍历data数组
+                      var ls = data[i];     
+                      html +="<span>留言:"+ls.content+"</span><br>";
+                      html +="<span>发布者:"+ls.author+"</span>&nbsp;&nbsp;&nbsp;";
+                      html +="<span>发布时间:"+ls.createtime+"</span><br>"
+                      html +="<hr style=\" height:2px;border:none;border-top:2px dotted #185598;\" />"
+                    }
+                $("#test").html(html); //在html页面id=test的标签里显示html内容
+                },
+            })
+        })
+</script>
+
 </body>
 </html>
