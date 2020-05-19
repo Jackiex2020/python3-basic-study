@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from flask import Flask,Response,jsonify,render_template
-from flask_sqlalchemy import SQLAlchemy
-import json
-
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
@@ -21,7 +19,7 @@ class User(db.Model):
     name = db.Column(db.String(100), nullable=False)
  
 def model_to_dict(result):
-    from collections.abc import Iterable, Iterator
+    from collections.abc import Iterable
     # 转换完成后，删除 '_sa_instance_state' 特殊属性
     try:
         if isinstance(result, Iterable):

@@ -12,3 +12,20 @@ from flask import Flask,request,render_template,redirect
 
 app = Flask(__name__)
 
+@app.route("/bbs",methods=['GET','POST'])
+def index():
+    if request.method =='POST':
+        username = request.form['username']
+        content = request.form['content']
+        if username =="tom" and content=="123456":
+            return redirect("http://www.baidu.com")
+        else:
+            message = "Failed Login"
+            return render_template('bbs.html',message=message)
+    else:
+        pass
+
+    return render_template('bbs.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)

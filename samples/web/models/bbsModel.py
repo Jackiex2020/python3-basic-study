@@ -1,14 +1,10 @@
 # coding: utf-8
-from sqlalchemy import Column, DateTime, Integer, String, Text
-from sqlalchemy.schema import FetchedValue
-from flask_sqlalchemy import SQLAlchemy
 
+from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-
-
-class Bb(db.Model):
+class BbsModel(db.Model):
     __tablename__ = 'bbs'
 
     autoID = db.Column(db.Integer, primary_key=True)
@@ -16,3 +12,20 @@ class Bb(db.Model):
     content = db.Column(db.Text, info='留言内容')
     author = db.Column(db.String(255), info='留言人')
     datetime = db.Column(db.DateTime, server_default=db.FetchedValue(), info='留言时间')
+
+    # 添加留言；所需要的参数通过键值对传入
+    @classmethod
+    def add_bbs(cls, **kwargs):
+        '''
+           参数说明：kwargs为各字段字典格式数据
+        '''
+        pass
+
+    @classmethod
+    def get_bbs(cls):
+        pass
+
+
+
+
+
