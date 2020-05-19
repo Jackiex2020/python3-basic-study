@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24f2395-7bfb-408c-9342-fa84b75f2c4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/samples/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/web/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/web/models/bbsModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/web/flask_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/web/vue-demo/getdata.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/basic/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/basic/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/web/bbs.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/web/bbs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/web/do_flask3.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/web/do_flask3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/web/do_wsgi_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/web/do_wsgi_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/web/myconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/web/myconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/web/vue-demo/bbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/samples/web/vue-demo/bbs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -69,8 +65,11 @@
       <recent name="F:\study\pythonStudy\python3-basic-study\samples\web\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.do_flask3">
-    <configuration name="bbs.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3-basic-study/samples/web/templates/bbs.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="Python.flask_api">
+    <configuration name="bbs.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3-basic-study/samples/web/vue-demo/bbs.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="getdata.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3-basic-study/samples/web/vue-demo/getdata.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="bbs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -117,29 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="do_sqlalchemy0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python3-basic-study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/db" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/db/do_sqlalchemy0.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="flask_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python3-basic-study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,7 +129,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/web/login.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/web/flask_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.flask_api" />
+        <item itemvalue="JavaScript Debug.bbs.html (1)" />
+        <item itemvalue="JavaScript Debug.getdata.html" />
         <item itemvalue="Python.do_flask3" />
         <item itemvalue="Python.bbs" />
-        <item itemvalue="JavaScript Debug.bbs.html" />
-        <item itemvalue="Python.login" />
-        <item itemvalue="Python.do_sqlalchemy0" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +174,7 @@
       <workItem from="1588918396714" duration="75000" />
       <workItem from="1589530486590" duration="4960000" />
       <workItem from="1589853980343" duration="7176000" />
+      <workItem from="1589884250175" duration="1303000" />
     </task>
     <servers />
   </component>
@@ -212,27 +190,27 @@
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1024.1240@0.0.1920.1040" timestamp="1587881752148" />
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589864513363" />
-    <state width="1865" height="257" key="GridCell.Tab.0.bottom" timestamp="1589876501686">
+    <state width="1865" height="257" key="GridCell.Tab.0.bottom" timestamp="1589885636318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589876501686" />
-    <state width="1865" height="257" key="GridCell.Tab.0.center" timestamp="1589876501686">
+    <state width="1865" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589885636318" />
+    <state width="1865" height="257" key="GridCell.Tab.0.center" timestamp="1589885636318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589876501686" />
-    <state width="1865" height="257" key="GridCell.Tab.0.left" timestamp="1589876501685">
+    <state width="1865" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589885636318" />
+    <state width="1865" height="257" key="GridCell.Tab.0.left" timestamp="1589885636317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589876501685" />
-    <state width="1865" height="257" key="GridCell.Tab.0.right" timestamp="1589876501686">
+    <state width="1865" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589885636317" />
+    <state width="1865" height="257" key="GridCell.Tab.0.right" timestamp="1589885636318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589876501686" />
-    <state x="639" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1588918398593">
+    <state width="1865" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589885636318" />
+    <state x="639" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1589884250536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="639" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1024.1240@0.0.1920.1040" timestamp="1587886093358" />
-    <state x="639" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1588918398593" />
+    <state x="639" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589884250536" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -249,6 +227,7 @@
     <SUITE FILE_PATH="coverage/python3_basic_study$login.coverage" NAME="login Coverage Results" MODIFIED="1589531335485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/web" />
     <SUITE FILE_PATH="coverage/python3_basic_study$do_sqlalchemy0.coverage" NAME="do_sqlalchemy0 Coverage Results" MODIFIED="1588839011715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/db" />
     <SUITE FILE_PATH="coverage/python3_basic_study$do_flask3.coverage" NAME="do_flask3 Coverage Results" MODIFIED="1589866919007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/web" />
+    <SUITE FILE_PATH="coverage/python3_basic_study$flask_api.coverage" NAME="flask_api Coverage Results" MODIFIED="1589885716577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/web" />
     <SUITE FILE_PATH="coverage/python3_basic_study$bbs.coverage" NAME="bbs Coverage Results" MODIFIED="1589854284296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/web" />
   </component>
 </project>

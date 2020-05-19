@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>python接口测试</title>
+	<script src="http://static.wanlianjin.com/data/m/wlcs/js/nocar/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<button onclick="getMessage()">点击获取数据</button>
+	<script>
+		function jsonpCallback(data) {
+		    console.log("jsonpCallback: " + JSON.parse(data).name)
+		}
+		function getMessage(){
+			$.ajax({
+				url:'http://127.0.0.1:5000/get',
+				type:'GET',
+				dataType:'jsonp',
+				crossDomain:true,
+				contentType: "application/jsonp;",
+				// jsonp 字段含义为服务器通过什么字段获取回调函数的名称
+		        jsonp: 'callback',
+		        // 声明本地回调函数的名称，jquery 默认随机生成一个函数名称
+		        jsonpCallback: 'jsonpCallback',
+				success: function(data) {
+		            console.log("ajax success callback: " + JSON.parse(data).name)
+		        },
+		        error: function(jqXHR, textStatus, errorThrown) {
+		            console.log(textStatus + ' ' + errorThrown);
+		        }
+			})
+		}
+	</script>
+</body>
+</html>

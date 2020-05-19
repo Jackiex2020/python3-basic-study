@@ -39,7 +39,7 @@ var vm = new Vue({
     methods: {
             get: function(){
                 //发送get请求
-                this.$http.get("http://api.mpb.womenqunaer.cn/news/index",{emulateJSON:true}).then(function(res){
+                this.$http.get("http://127.0.0.1:5000/get",{emulateJSON:true}).then(function(res){
                     console.log(res.body); 
                     this.msg=res.body;   
                 },function(){
