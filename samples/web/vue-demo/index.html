@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+<body>
+	<div id="app">
+		<div class="biaoti">新闻列表</div> 
+			<div class="container" v-for="item in list">
+				<div v-if="item.url.length==1">  <!--一张图片-->
+					<div class="txt">
+						<div class="content">{{item.content}}</div>
+						<div class="pic"><img :src=item.url></div>
+						<div class="clear"></div>
+					</div>
+					<div class="time">{{item.zuoze}} {{item.time}}</div>
+				</div>
+
+				<div class="container" v-else-if="item.url.length==0"> <!--没有图片-->
+					<div class="content2">{{item.content}}</div>
+					<div class="time">{{item.zuoze}}   {{item.time}}</div>
+				</div>
+
+				<div class="container" v-else="item.url.length==3"> <!--三张图片-->
+					<div class="content2">{{item.content}}</div>
+					<div class="txt">
+						<div class="pic3"><img :src=item.url[0]></div>
+						<div class="pic3"><img :src=item.url[1]></div>
+						<div class="pic3"><img :src=item.url[2]></div>
+						<div class="clear"></div>
+					</div>
+					<div class="time">{{item.zuoze}}   {{item.time}}</div>
+				</div>
+			</div>
+
+	</div>
+</body>
+<script src="./data/data.js"></script>
+<script>
+
+	var Vu = new Vue({
+		el: "#app",
+		data: {
+			list: data
+		}
+	})
+</script>
+</html>

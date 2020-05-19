@@ -1,0 +1,62 @@
+* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	body {
+		background-color: #ccc;
+	}
+	.biaoti {
+		font-size: 50px;
+		text-align: center;
+		padding: 30px 0;
+		background-color: #fff;
+	}
+	.container {
+		margin: 20px;
+		background-color: #fff;
+		width: 95%;
+	}
+	.title {
+		border-bottom: 1px solid #ccc;
+		padding: 20px;
+		font-size: 50px;
+		text-align: center;
+ 	}
+ 	.content {
+ 		border-bottom: 1px solid #ccc;
+ 		padding: 20px;
+ 		font-size: 40px;
+ 		float: left;
+ 		width: 75%;
+ 		overflow: hidden;
+ 		text-overflow: ellipsis;
+ 	}
+ 	.content2 {
+ 		border-bottom: 1px solid #ccc;
+ 		padding: 20px;
+ 		font-size: 40px;
+ 		text-overflow: ellipsis;
+ 	}
+ 	.pic img{
+ 		float: right;
+ 		max-width: 25%;
+ 		height: 145px;
+ 		padding: 5px;
+ 	}
+ 	.pic3 {
+ 		float: left;
+ 	}
+ 	.pic3 img {
+ 		width: 30vw;
+ 		padding: 5px;
+ 		height: 180px;
+ 	}
+ 	.time {
+ 		padding: 20px;
+ 		font-size: 20px;
+ 		text-align: left;
+ 	}
+ 	.clear {
+ 		clear: both;
+ 	}

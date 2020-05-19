@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易留言板程序</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+</head>
+<body>
+
+  <div align="right">
+          <form method="POST" class="textcenter" >
+          <input type="text" name="username" placeholder="username">
+          <input type="content" name="content" placeholder="content">
+          <input type="submit" value="查询">
+          <input type="reset" value="重置">
+          </form>
+      <br>
+  </div>
+
+  <div>
+  <table border="1" cellpadding="0" cellspacing="0" bgcolor="#fff" width="100%">
+			<tr class="textcenter">
+				<td><h2>留言列表</h2></td>
+				<td>操作</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="userinfo">
+						<div class="headpic">
+							<img src="../static/images/b.jpeg" width=70% /><br>
+						</div>
+						<div style="margin-left: 10%">
+							<h4 class="title">留言标题</h4>
+							<span class="datetime">留言时间</span>
+							<p class="content">留言内容</p>
+						</div>
+
+					</div>
+				</td>
+				<td align="center"><a href="#">更改</a>|<a href="#">删除</a></td>
+			</tr>
+
+		</table>
+</div>
+<div style="text-align: center">
+
+			<input type="button" name="page" value="上一页" onclick="window.location='#'" class="button">
+
+			<input type="button" name="page" value="下一页" onclick="window.location='#'" class="button">
+
+</div>
+
+</body>
+</html>

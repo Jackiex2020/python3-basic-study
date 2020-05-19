@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24f2395-7bfb-408c-9342-fa84b75f2c4b" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/db/do_sqlalchemy3.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/oop_advance/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/oop_advance/orm.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/samples/web/bbs.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/web/bbs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/web/vue-demo/bbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/samples/web/vue-demo/bbs-vue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/web/vue-demo/getdata.html" beforeDir="false" afterPath="$PROJECT_DIR$/samples/web/vue-demo/getdata-ajax.html" afterDir="false" />
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -39,20 +45,27 @@
     <setting file="file://$PROJECT_DIR$/samples/crawler/do_beautifulSoup4.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1asaG627uVqWduftWzGTd5NECw3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.do_sqlachemy_bbs">
     <configuration name="do_BeautyfelSoup2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python3-basic-study" />
@@ -74,9 +87,21 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+=======
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\study\pythonStudy\python3-basic-study\samples\web\models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.flask_api">
+    <configuration name="bbs-vue.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3-basic-study/samples/web/vue-demo/bbs-vue.html" useBuiltInWebServerPort="true">
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
       <method v="2" />
     </configuration>
-    <configuration name="do_beautifulSoup4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="getdata-ajax.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/python3-basic-study/samples/web/vue-demo/getdata-ajax.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="bbs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python3-basic-study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,12 +109,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/crawler" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/web" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/crawler/do_beautifulSoup4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/web/bbs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="do_re3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="do_flask3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python3-basic-study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,12 +131,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/regex" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/web" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/regex/do_re3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/web/do_flask3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,29 +145,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="do_requests" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python3-basic-study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/crawler" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/crawler/do_requests.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+<<<<<<< HEAD
     <configuration name="do_sqlachemy_bbs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="flask_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
       <module name="python3-basic-study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,12 +157,20 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/db" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples/web" />
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/db/do_sqlachemy_bbs.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/web/flask_api.py" />
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,11 +181,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.do_sqlachemy_bbs" />
         <item itemvalue="Python.do_beautifulSoup4" />
         <item itemvalue="Python.do_BeautyfelSoup2" />
         <item itemvalue="Python.do_requests" />
         <item itemvalue="Python.do_re3" />
+=======
+        <item itemvalue="Python.flask_api" />
+        <item itemvalue="JavaScript Debug.bbs-vue.html" />
+        <item itemvalue="JavaScript Debug.getdata-ajax.html" />
+        <item itemvalue="Python.do_flask3" />
+        <item itemvalue="Python.bbs" />
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
       </list>
     </recent_temporary>
   </component>
@@ -196,19 +219,31 @@
       <workItem from="1587715173078" duration="885000" />
       <workItem from="1587881694920" duration="1257000" />
       <workItem from="1587886092048" duration="303000" />
+<<<<<<< HEAD
       <workItem from="1589296956038" duration="528000" />
       <workItem from="1589300284283" duration="218000" />
+=======
+      <workItem from="1588837514201" duration="4163000" />
+      <workItem from="1588918396714" duration="75000" />
+      <workItem from="1589530486590" duration="4960000" />
+      <workItem from="1589853980343" duration="7176000" />
+      <workItem from="1589884250175" duration="1645000" />
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1587881752148">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1589864513363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1024.1240@0.0.1920.1040" timestamp="1587881752148" />
+<<<<<<< HEAD
     <state width="1869" height="268" key="GridCell.Tab.0.bottom" timestamp="1589300502248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -230,9 +265,30 @@
     </state>
     <state x="330" y="76" key="SettingsEditor/0.0.1920.1040/-1080.-851.1080.1880@0.0.1920.1040" timestamp="1589297177122" />
     <state x="639" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1587886093358">
+=======
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589864513363" />
+    <state width="1865" height="257" key="GridCell.Tab.0.bottom" timestamp="1589885898358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589885898358" />
+    <state width="1865" height="257" key="GridCell.Tab.0.center" timestamp="1589885898358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589885898358" />
+    <state width="1865" height="257" key="GridCell.Tab.0.left" timestamp="1589885898357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589885898357" />
+    <state width="1865" height="257" key="GridCell.Tab.0.right" timestamp="1589885898358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589885898358" />
+    <state x="639" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1589884250536">
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="639" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1024.1240@0.0.1920.1040" timestamp="1587886093358" />
+    <state x="639" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1589884250536" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -246,6 +302,14 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/python3_basic_study$do_sqlachemy_bbs.coverage" NAME="do_sqlachemy_bbs Coverage Results" MODIFIED="1589300481563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/db" />
+=======
+    <SUITE FILE_PATH="coverage/python3_basic_study$login.coverage" NAME="login Coverage Results" MODIFIED="1589531335485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/web" />
+    <SUITE FILE_PATH="coverage/python3_basic_study$do_sqlalchemy0.coverage" NAME="do_sqlalchemy0 Coverage Results" MODIFIED="1588839011715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/db" />
+    <SUITE FILE_PATH="coverage/python3_basic_study$do_flask3.coverage" NAME="do_flask3 Coverage Results" MODIFIED="1589866919007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/web" />
+    <SUITE FILE_PATH="coverage/python3_basic_study$flask_api.coverage" NAME="flask_api Coverage Results" MODIFIED="1589885716577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/web" />
+    <SUITE FILE_PATH="coverage/python3_basic_study$bbs.coverage" NAME="bbs Coverage Results" MODIFIED="1589854284296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/samples/web" />
+>>>>>>> 3798b510f7aef8e23dd987c1042692d80e834185
   </component>
 </project>
