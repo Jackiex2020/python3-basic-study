@@ -4,7 +4,7 @@
 from datetime import datetime
 import os
 
-pwd = os.path.abspath('.')
+pwd = os.path.abspath('')
 
 print(pwd)
 print(os.getcwd())

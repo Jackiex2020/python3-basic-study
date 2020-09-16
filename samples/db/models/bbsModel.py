@@ -63,3 +63,4 @@ class BBsModel(Base):
             return {'code': RET.DBERR, 'message': '数据库异常，查询失败', 'error': str(e)}
 
         return {'code': RET.OK, 'message': 'OK', 'data': commons.all_to_dict(bbs_contents)}
+
