@@ -9,7 +9,7 @@
 
 
 # 数据库连接定义
-SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://root:idealwifi2020@39.107.96.222:3306/BBSDemo?charset=utf8"
+SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://xxxx:xxxx@39.107.96.222:3306/BBSDemo?charset=utf8"
 
 # 数据库连接池初始化的容量
 POOL_SIZE = 5

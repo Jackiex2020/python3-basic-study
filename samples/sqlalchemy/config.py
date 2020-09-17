@@ -12,8 +12,8 @@
 # 数据库连接配置
 DIALECT = 'mysql'
 DRIVER = 'mysqldb'
-USERNAME = 'root'
-PASSWORD = 'idealwifi2020'
+USERNAME = 'xxx'
+PASSWORD = 'xxxxx'
 HOST = '39.107.96.222'
 PORT = '3306'
 DATABASE = 'BBSDemo'
