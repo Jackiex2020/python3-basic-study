@@ -22,7 +22,7 @@ SQLALCHEMY_DATABASE_URI = '{}+{}://{}:{}@{}:{}/{}?charset=utf8'.format(DIALECT, 
                                                                        PORT, DATABASE)
 
 # 数据库连接定义
-#SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://root:password@3ip:3306/test?charset=utf8"
+#SQLALCHEMY_DATABASE_URI = "mysql+mysqldb://root:password@ip:3306/test?charset=utf8"
 
 # 数据库连接池初始化的容量
 POOL_SIZE = 5

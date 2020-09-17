@@ -15,9 +15,6 @@ from ..utils import commons
 from ..utils.response_code import RET
 
 Base = declarative_base()
-metadata = Base.metadata
-
-
 
 class BBsModel(Base):
     __tablename__ = 'bbs'
@@ -46,21 +43,32 @@ class BBsModel(Base):
 
     @classmethod
     def get_bbs(cls, **kwargs):
-
+        # 获得查询参数
+        username = kwargs.get('username')
+        content = kwargs.get('content')
         page = int(kwargs.get('page', 1))
         size = int(kwargs.get('size', 10))
+
+        filter_list = []
+        # 过滤为空的条件
+        if username:
+            filter_list.append(cls.username == username)
+        if content:
+            filter_list.append(cls.content == content)
+
+        #filter_list.append(or_(cls.username == username, cls.content == content))
+
         try:
-            filter_list = []
-            filter_list.append(or_(cls.username == '', cls.content == None))
 
             bbs_model = session.query(cls).filter(*filter_list)
 
-            bbs_contents = bbs_model.limit(size).offset((page - 1) * size).all()
+            # 计算应该返回的数据
+            res = bbs_model.limit(size).offset((page - 1) * size).all()
 
-            if not bbs_contents:
-                return {'code': RET.NODATA, 'message': '无企业数据', 'error': '无企业数据'}
+            if not res:
+                return {'code': RET.NODATA, 'message': '无数据', 'error': '无数据'}
         except Exception as e:
             return {'code': RET.DBERR, 'message': '数据库异常，查询失败', 'error': str(e)}
 
-        return {'code': RET.OK, 'message': 'OK', 'data': commons.all_to_dict(bbs_contents)}
+        return {'code': RET.OK, 'message': 'OK', 'data': commons.all_to_dict(res)}
 

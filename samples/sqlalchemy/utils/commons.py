@@ -6,12 +6,11 @@
 # datetime: 2020/5/8 15:50
 # software: PyCharm
 
-
 from datetime import datetime as cdatetime  # 有时候会返回datatime类型
 from datetime import date, time
 from sqlalchemy import DateTime, Numeric, Date, Time
 
-# sqlachemy查询结果（对象）转换为字典,下面的所有方法为一个模块，使用时直接调用该方法即可
+# sqlachemy查询结果（多个对象）转换为字典,下面的所有方法为一个模块，使用时直接调用该方法即可
 def all_to_dict(all_vendors):
     v = [to_dict(ven) for ven in all_vendors]
     return v
