@@ -2,9 +2,7 @@
 
 from flask_sqlalchemy import SQLAlchemy
 
-
 db = SQLAlchemy()
-
 
 
 class ClassinfoModel(db.Model):
@@ -13,3 +11,4 @@ class ClassinfoModel(db.Model):
     autoID = db.Column(db.Integer, primary_key=True)
     classID = db.Column(db.Integer)
     className = db.Column(db.String(255))
+
