@@ -8,15 +8,15 @@
 '''
    BeautifulSoup模块的用法
 '''
-from bs4 import BeautifulSoup
 import requests
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import urllib3
+from bs4 import BeautifulSoup
+
 urllib3.disable_warnings()
 
 baseurl='https://python123.io/ws/demo.html'
-baseurl='https://www.ncepu.edu.cn/index.htm'
-baseurl='https://www.ncepu.edu.cn/index.htm'
+#baseurl='https://www.ncepu.edu.cn/index.htm'
+#baseurl='https://www.ncepu.edu.cn/index.htm'
 
 html=requests.get(baseurl)
 

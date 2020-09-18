@@ -23,12 +23,28 @@ def download(img_link,img_name):
 baseurl='http://slide.news.sina.com.cn/y/slide_1_88490_353183.html/d/1#p=1'
 html=requests.get(baseurl)
 html.encoding='gbk'
-print(html.text)
+#print(html.text)
 
 #分析网页
 soup=BeautifulSoup(html.text,'html.parser')
 imgs=soup.find_all('dl')
-print(imgs)
+#print(imgs)
+
+'''
+<dl>
+<dt>新浪爱拍周选美图类作品2019.1.28-2.17</dt>
+<dd>http://n.sinaimg.cn/news/1_img/upload/cf3881ab/728/w1000h528/20190227/dnfw-htptaqf1656761.jpg</dd>
+<dd>http://k.sinaimg.cn/n/news/1_ori/upload/cf3881ab/728/w1000h528/20190227/dnfw-htptaqf1656761.jpg/w160h120hdp.jpg</dd>
+<dd>http://k.sinaimg.cn/n/news/1_ori/upload/cf3881ab/728/w1000h528/20190227/dnfw-htptaqf1656761.jpg/w50hdp.jpg</dd>
+<dd>2019年02月27日 13:13</dd>
+<dd>《金陵夜色》   摄影：@收化莉思</dd>
+<dd><a href="http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&amp;newsid=slidenews-88490-2343849">评论</a></dd>
+<dd>2343849</dd>
+</dl>
+
+'''
+
+
 for img in imgs: #对于每一个dl
     img_link=img.dd.text
     img_name=img.dd.next_sibling.next_sibling.next_sibling.next_sibling.next_sibling.next_sibling.next_sibling.next_sibling.text

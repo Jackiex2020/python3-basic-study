@@ -9,6 +9,7 @@
 this is function  description 
 '''
 import requests
+
 def getHtmlText(url):
     try:        # 网络连接有风险，异常处理很重要
         r = requests.get(url,timeout=30)
