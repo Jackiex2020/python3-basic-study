@@ -10,17 +10,27 @@
 
 from samples.db.models.bbsModel import BBsModel
 
-if __name__ == '__main__':
-       
-    # 测试添加
+def test_add():
+    # 测试添加,测试添加数据准备
     kwargs = {
-            'username': 'jackiex',
-            'content': '6666666'
-        }
+        'username': 'Tomcat',
+        'content': '888888'
+    }
 
     result_dict = BBsModel.add_bbs(**kwargs)
 
     if result_dict.get('code') == '200':
         print("插入记录成功")
 
-    
+def test_query():
+    # 测试查询，要查询的数据准备
+    kwargs = {
+        # 'username': '',
+        # 'content': ''
+    }
+
+    result_dict = BBsModel.get_bbs(**kwargs)
+    print(result_dict)
+
+if __name__ == '__main__':
+    test_query()
