@@ -11,7 +11,7 @@
 # import module your need
 
 from flask import Flask, request, g
-from common import  funa, funb, func
+from samples.flaskadvanced.common import  funa, funb, func
 
 app = Flask(__name__)
 
